@@ -12,7 +12,7 @@ This Terraform module creates an AWS IAM policy with customizable permissions an
 
 ```hcl
 module "iam_policy" {
-  source = "git::https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint.git?ref=v1.0.0"
+  source = "git::https://github.com/ZhangMaKe/tf-module-lambda-iam-policy.git?ref=v1.0.0"
 
   name        = "my-policy"
   description = "Custom IAM policy for specific resources"
