@@ -19,3 +19,9 @@ variable "resources" {
   type        = list(string)
   default     = ["*"]
 }
+
+variable "role_arn" {
+  description = "The ARN of the IAM role to attach the policy to"
+  type        = string
+  default = null
+}
