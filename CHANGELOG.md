@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/ZhangMaKe/tf-module-iam-policy/compare/v1.1.0...v1.1.1) (2025-06-06)
+
+
+### Bug Fixes
+
+* updated variable, reference, and readme to reference role_id instead of role_arn ([c0041f5](https://github.com/ZhangMaKe/tf-module-iam-policy/commit/c0041f5a9ea604f17753bdc3e95b684de35650b8))
+
 # [1.1.0](https://github.com/ZhangMaKe/tf-module-iam-policy/compare/v1.0.1...v1.1.0) (2025-06-06)
 
 
