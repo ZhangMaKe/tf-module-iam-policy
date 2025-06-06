@@ -20,7 +20,7 @@ variable "resources" {
   default     = ["*"]
 }
 
-variable "role_arn" {
+variable "role_id" {
   description = "The ARN of the IAM role to attach the policy to"
   type        = string
   default = null

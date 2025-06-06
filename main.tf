@@ -15,7 +15,7 @@ resource "aws_iam_policy" "iam_policy" {
 }
 
 resource "aws_iam_role_policy_attachment" "role_policy_attachment" {
-  count = var.role_arn == null ? 0 : 1
-  role       = var.role_arn
+  count = var.role_id == null ? 0 : 1
+  role       = var.role_id
   policy_arn = aws_iam_policy.iam_policy.arn
 }
