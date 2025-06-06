@@ -7,6 +7,8 @@ This Terraform module creates an AWS IAM policy with customizable permissions an
 - Creates an IAM policy with specified actions and resources
 - Configurable policy name and description
 - Outputs the policy ARN for reference
+- Attaches the policy to an IAM Role if an ID is provided
+
 
 ## Usage
 
@@ -29,6 +31,8 @@ module "iam_policy" {
 | description | The description of the IAM policy | `string` | `"Managed by Terraform"` | no |
 | actions | List of IAM actions to allow | `list(string)` | n/a | yes |
 | resources | List of resource ARNs the policy applies to | `list(string)` | `["*"]` | no |
+| role_id | The name of the iam role to attach the policy to | `string` | null | no |
+
 
 ## Outputs
 
@@ -60,7 +64,6 @@ module "s3_access_policy" {
 
 ## Requirements
 
-- Terraform >= 0.12
 - AWS Provider
 
 ## License
