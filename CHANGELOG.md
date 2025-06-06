@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ZhangMaKe/tf-module-iam-policy/compare/v1.0.1...v1.1.0) (2025-06-06)
+
+
+### Features
+
+* Added optional role policy attachment ([0645d63](https://github.com/ZhangMaKe/tf-module-iam-policy/commit/0645d63e70d2441eff666c2c38049bf286916a54))
+
 ## [1.0.1](https://github.com/ZhangMaKe/tf-module-iam-policy/compare/v1.0.0...v1.0.1) (2025-06-02)
 
 
