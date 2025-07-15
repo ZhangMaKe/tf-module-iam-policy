@@ -15,7 +15,7 @@ resource "aws_iam_policy" "iam_policy" {
 }
 
 resource "aws_iam_role_policy_attachment" "role_policy_attachment" {
-  count = var.role_id == null ? 0 : 1
+  for_each = toset(var.role_id != "" ? ["enabled"] : []) 
   role       = var.role_id
   policy_arn = aws_iam_policy.iam_policy.arn
 }
