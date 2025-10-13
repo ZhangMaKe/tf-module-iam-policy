@@ -14,6 +14,7 @@ resource "aws_iam_policy" "iam_policy" {
   })
 }
 
+# attachment resource for each role to attach
 resource "aws_iam_role_policy_attachment" "role_policy_attachment" {
   for_each = toset(var.role_id != "" ? ["enabled"] : []) 
   role       = var.role_id
